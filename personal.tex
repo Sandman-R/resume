@@ -1,104 +1,131 @@
-\usepackage{blindtext}
-\usepackage{lipsum}
+\def\firstname{Yihan}
+\def\lastname{Hu}
+\def\preferredname{}
+% Comment out position as not specified
+% \def\position{Data Scientist / ML Engineer}
 
-\def\lrand{\lipsum[-]}
-\def\firstname{Firstname}
-\def\lastname{Lastname}
-\def\preferredname{Preferredname}
-% If you do not want to display the position you are applying for, simply comment it out.
-\def\position{Software Development Engineer}
+\def\phone{+86 18964167201 | +1 (510) 387-1360}
+\def\email{yh3919@columbia.edu}
+% \def\linkedin{linkedin.com/in/username}
+% \def\github{github.com/username}
 
-\def\phone{+1 (xxx) xxx-xxxx}
-\def\email{youremail@college.harvard.edu}
-\def\linkedin{linkedin.com/in/username}
-\def\github{github.com/username}
-
-% If you do not want to display the address, simply comment it out.
-\def\address{Current Adrress, USA}
-
-\def\profileSummary{
-	\section{Career summary}
-	\link{https://www.google.com/}{Google}
-	\blindtext
-}
+% Comment out address as not specified
+% \def\address{New York City, USA}
 
 %-------------------------------------
 % Education
 %-------------------------------------
-\Education{PhD}
-{Year}{Year}{Harvard University}{Cambridge, MA}
-{PhD Degree}
-{Concentration}{}{}
+\Education{MS}
+{Aug 2025}{Dec 2026}{Columbia University}{New York City, US}
+{M.S. in Data Science}
+{}{}{ Relevant coursework: Applied Machine Learning, Algorithms for Massive Data, Statistical Inference}
 
-\Education{Master}
-{Year}{Year}{Harvard University}{Cambridge, MA}
-{Master's Degree}
-{Concentration}{}{}
+\Education{BS}
+{Sep 2021}{Jun 2025}{ShanghaiTech University}{Shanghai, China}
+{B.S. in Mathematics and Applied Mathematics}
+{}{}{}
 
-\Education{Bachelor}
-{Year}{Year}{Harvard University}{Cambridge, MA}
-{Bachelor Degree}
-{Concentration}{GPA:4.0/4.0}{Relevant Coursework: [Note: Optional. Awards and honors can also be listed here.]}
+\Education{Exchange}
+{}{}{University of California, Berkeley}{Berkeley, CA}
+{Exchange Student}
+{}{}{}
 
-\Experience{Exp1}
-{Month Year}
-{Month Year}
-{Organization}
-{Position Title}
-{City, State (or Remote)}
+%-------------------------------------
+% Internship Experience
+%-------------------------------------
+\Experience{Intern1}
+{Jun 2025}
+{Aug 2025}
+{Calming Technology (an AI Solution Company)}
+{AI Algorithm Engineer Intern}
+{Shanghai, China}
 {
 	\begin{itemize}
-		\resumeItem{Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet form.}
-		\resumeItem{Begin each line with an action verb and include details that will help the reader understand your accomplishments,
-			skills, knowledge, abilities, or achievements.}
-		\resumeItem{Quantify where possible.}
-		\resumeItem{Do not use personal pronouns; each line should be a phrase rather than a full sentence.}
+		\resumeItem{Developed an OCR-based, LLM-powered Q\&A AI Agent (PDF to Markdown to Knowledge Base to LLM) to replace manual lookup workflows with natural language querying; leveraged MaxKB's built-in document segmentation and embedded pipeline to process PDF/Word files via OCR and built structured vector indexes.}
+		\resumeItem{Engineered a YOLO-based defect-detection model for lipstick production to reduce manual inspection workload and enable real-time quality monitoring; applied data augmentation and systematic hyperparameter tuning to achieve 98\% accuracy across diverse defect classes.}
 	\end{itemize}\vspace{-5pt}
 }
 
-\Experience{Exp2}
-{Month Year}
-{Month Year}
-{Organization}
-{Position Title}
-{City, State (or Remote)}
+\Experience{Research1}
+{May 2024}
+{Jun 2025}
+{ShanghaiTech University}
+{AI Research Assistant}
+{Shanghai, China}
 {
 	\begin{itemize}
-		\resumeItem{Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet form.}
-		\resumeItem{Begin each line with an action verb and include details that will help the reader understand your accomplishments,
-			skills, knowledge, abilities, or achievements.}
-		\resumeItem{Quantify where possible.}
-		\resumeItem{Do not use personal pronouns; each line should be a phrase rather than a full sentence.}
+		\resumeItem{Designed DeepFRC, an end-to-end deep learning framework that jointly learns diffeomorphic warping functions and a discriminative classifier for functional data, eliminating the need for error-prone sequential pre-registration.}
+		\resumeItem{Developed a neural deformation operator with Fourier spectral embedding to enable smooth, differentiable phase alignment, significantly reducing temporal misalignment artifacts across biomedical and motion analysis datasets.}
+		\resumeItem{Formulated a class-aware contrastive loss enforcing intra-class coherence and inter-class separation; benchmarked against SOTA methods, achieved 5\% improvement in classification accuracy, and established theoretical generalization bounds.}
+		\resumeItem{Co-first-author paper accepted to ICLR 2026.}
 	\end{itemize}\vspace{-5pt}
 }
 
-\Experience{Lead1}
-{Month Year}
-{Month Year}
-{Organization}
-{Role}
-{City, State}
+%-------------------------------------
+% Academic and Project Experience
+%-------------------------------------
+\Experience{Project1}
+{Jan 2026}
+{Apr 2026}
+{Columbia University}
+{AI Agent for Retail Demand Forecasting}
+{New York City, US}
 {
 	\begin{itemize}
-		\resumeItem{This section can be formatted similarly to the Experience section, or you can omit descriptions for activities.}
-		\resumeItem{If this section is more relevant to the opportunity you are applying for, consider moving this above your Experience section.}
+		\resumeItem{Built a cluster-based demand forecasting framework for a UK wholesale retailer, reducing 5,000 SKUs to 5 behaviorally distinct segments via KMeans + rule-based classification on 23 engineered time-series features.}
+		\resumeItem{Engineered a 36-feature panel (lag/rolling, calendar, product-level) with strict no-leakage design; trained Random Forest and LightGBM models per cluster with signed-log target transformation to handle heavy-tailed retail revenue.}
+		\resumeItem{Achieved 80.6\% weighted test MAPE across all clusters; Random Forest outperformed tuned LightGBM on held-out test set (81.59\% vs. 122.63\% on Steady Regulars).}
+		\resumeItem{Deployed an end-to-end inference pipeline and integrated an n8n AI agent interface enabling non-technical planners to query SKU-level forecasts in natural language.}
 	\end{itemize}\vspace{-5pt}
 }
 
-\Project{Github1}
-{2025}
-{Simple Resume Template}
-{developer}
+\Experience{Project2}
+{Aug 2025}
+{Dec 2025}
+{Columbia University}
+{Diffusion-Preserving Graph Sparsification}
+{New York City, US}
+{
+	\begin{itemize}
+		\resumeItem{Designed a GNN-based edge-scoring framework trained with a differentiable one-step random-walk preservation objective and explicit sparsity constraints to retain Independent Cascade (IC) diffusion behavior after compression.}
+		\resumeItem{Conducted 200 Monte Carlo IC simulations per graph to rigorously quantify diffusion fidelity under varying keep ratios; outperformed classical effective-resistance and random-sampling baselines on real-world communication networks.}
+		\resumeItem{Demonstrated strong cross-family generalization from synthetic to real-world graphs.}
+	\end{itemize}\vspace{-5pt}
+}
+
+\Experience{Project3}
+{Aug 2025}
+{Dec 2025}
+{Columbia University}
+{AI Agent: Machine Learning Education}
+{New York City, US}
+{
+	\begin{itemize}
+		\resumeItem{Processed and indexed 100+ course slides into a structured knowledge base via RAG, enabling sub-second semantic retrieval of relevant instructional content across topics.}
+		\resumeItem{Tracked student performance metrics and mastery trends using a learning dynamics engine, generating data-driven insights on knowledge gaps and study prioritization.}
+		\resumeItem{Designed user-facing analytics translating model outputs into personalized study recommendations; monitored usage patterns to iterate on agent behavior and improve student engagement.}
+	\end{itemize}\vspace{-5pt}
+}
+
+%-------------------------------------
+% Publication
+%-------------------------------------
+\Project{Pub1}
+{2026}
+{DeepFRC: An End-to-End Deep Learning Model for Functional Registration and Classification}
+{Co-first Author}
 {\begin{itemize}
-		\resumeItem{\lrand[1]}
-		\resumeItem{\lrand[1]}
+		\resumeItem{Siyuan Jiang*, Yihan Hu*, Wenjie Li*, Pengcheng Zeng (2026). International Conference on Learning Representations (ICLR), Jan 2026. *Co-first author.}
 	\end{itemize}\vspace{-23pt}}
 
-\Project{Github2}
-{2025}
-{Simple Resume Template}
-{developer}
+%-------------------------------------
+% Skills
+%-------------------------------------
+\Project{Skills}
+{}
+{Languages and Technical Skills}
+{}
 {\begin{itemize}
-		\resumeItem{\lrand[1]}
-		\resumeItem{\lrand[1]}
+		\resumeItem{\textbf{Languages:} English (Fluent), Mandarin (Native)}
+		\resumeItem{\textbf{Programming and Tools:} Python, C/C++, Java, MATLAB, R, Git, Docker, SQL, Tableau, PyTorch, Pandas, TensorFlow, n8n, Google Cloud}
 	\end{itemize}\vspace{-23pt}}
